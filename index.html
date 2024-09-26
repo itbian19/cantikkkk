@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucapan Ulang Tahun</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        .marquee {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #e44d26;
+        }
+
+        .card {
+            display: none;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #e44d26;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .signature {
+            margin-top: 20px;
+            font-style: italic;
+            color: #666;
+        }
+
+        #photo {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        #button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <marquee class="marquee">haiiii, gue lagi belajarr lagi niii eheheheh, how are you doing today? jangan ngilang" donggg mbaaa, klo ada hal yang mau di ceritain, cerita yaa sama gue, okee?💐</marquee>
+    
+    <button id="button" onclick="showCard()">Klik ya cill</button>
+    
+    <div id="card" class="card">
+        <img id="photo" src="cia.jpg" alt="Ucapan Ulang Tahun">
+        <h1>(annisa, ciaa, nisa
+            💐
+            
+            )</h1>
+        <p>
+        
+           
+        </p>
+        <p class="signature">Dibuat oleh,<br>Mas Mas Biasa</p>
+        
+        <audio id="birthdaySong" controls>
+            <source src="Kahitna  Cantik eclat cover.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script>
+        function showCard() {
+            // Menampilkan kartu
+            var card = document.getElementById('card');
+            var button = document.getElementById('button');
+
+            // Mengubah tampilan tombol dan kartu
+            button.style.display = 'none';
+            card.style.display = 'block';
+
+            // Memainkan musik
+            var audio = document.getElementById('birthdaySong');
+            audio.play();
+        }
+    </script>
+</body>
+</html>
