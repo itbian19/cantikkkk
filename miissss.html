@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANGEN CAAA</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        .marquee {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #e44d26;
+        }
+
+        .card {
+            display: none;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #e44d26;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .signature {
+            margin-top: 20px;
+            font-style: italic;
+            color: #666;
+        }
+
+        #photo {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        #button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <marquee class="marquee">haiiii cakull,, how's your day?? akuu kangenn bngtt caaa, maaf yaa klo kesanyaa aku ngemis ke kamuu ehehe, soalnyaa cintakuu uda all in ke kamuuu, love you cacaa💐💐</marquee>
+    
+    <button id="button" onclick="showCard()">Klik ya caaa</button>
+    
+    <div id="card" class="card">
+        <img id="photo" src="first.jpg" alt="Ucapan Ulang Tahun">
+        <h1>(
+            💐raisyaaulia, cacaa, cakulll
+            
+            )</h1>
+        <p>
+        
+           
+        </p>
+        <p class="signature">aku ga mau asing sama kamuu, semenjak sama kamu aku bisa mengenang masa dan kenangan indah, ya walaupun cuma sebentar ehhee. tapi aku bakal ingat kamu sebagai orang yang aku cinta setulus dan sesayang ini, bahkan sebangga bangganya sampe aku nangis saking aku gamau kehilangan kamuu. tpi kyaknya skarang aku bner' kehilangan kamu. skali lagi aku mau bilang makasihh yaa atas segalanya, aku ga pernah nyesel bisa naruh perasaan aku sedalam ini sama kamu. yaa pada akhirnya kita tetap harus selesai. mkasih ya udah pernah nerima kekurangan aku, udah pernah ada di hidup aku. makasih udah pernah nerima baik buruknya aku ketemu sama kamu bikin aku bersyukur banget, boong kalo aku udah gamau sama kamu lagi. aku beruntung bngtt ktemu sama kamu.
+            akuu gamauu kita asingg caa, kita chatan lagii yaa? bolehh?? kalo bole aku tunggu call dari kamuu..<br>-biuu</p>
+        
+        <audio id="birthdaySong" controls>
+            <source src="miss u caa.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script>
+        function showCard() {
+            // Menampilkan kartu
+            var card = document.getElementById('card');
+            var button = document.getElementById('button');
+
+            // Mengubah tampilan tombol dan kartu
+            button.style.display = 'none';
+            card.style.display = 'block';
+
+            // Memainkan musik
+            var audio = document.getElementById('birthdaySong');
+            audio.play();
+        }
+    </script>
+</body>
+</html>
